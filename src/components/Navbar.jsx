@@ -6,7 +6,7 @@ export default function Navbar() {
             <AppBar position="fixed" color="error">
               <Toolbar>
                 <Typography variant="h6">
-                  <span>No/Sense</span> News
+                  <span className="logo">No/Sense</span> <span className="logo">News</span>
                 </Typography>
               </Toolbar>
             </AppBar>

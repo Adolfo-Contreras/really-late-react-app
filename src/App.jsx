@@ -5,7 +5,7 @@ function App() {
   return (
     <>
     <Navbar/>
-      <Typography variant="h3" color="initial">Welcome to No-Sense News App</Typography>
+      <Typography variant="h3" color="initial">Welcome to <span>No/Sense</span>News App</Typography>
     </>
   )
 }
