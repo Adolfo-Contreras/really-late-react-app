@@ -1,5 +1,6 @@
 import { Box, AppBar, Toolbar, Typography, List, ListItem, FormControl, FormLabel, FormHelperText, OutlinedInput, IconButton } from "@mui/material";
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
+import { getTopNews } from "../apiQuery";
 export default function Navbar() {
     return (
         <Box>
@@ -11,7 +12,7 @@ export default function Navbar() {
                 
                     <FormControl>
                       <FormLabel></FormLabel>
-                      <OutlinedInput placeholder="Search" endAdornment={<IconButton><SearchSharpIcon/></IconButton>}></OutlinedInput>
+                      <OutlinedInput placeholder="Search" endAdornment={<IconButton onClick={()=>getTopNews()}><SearchSharpIcon/></IconButton>}></OutlinedInput>
                       <FormHelperText></FormHelperText>
                     </FormControl>
               </Toolbar>

@@ -1,7 +1,6 @@
 import { Card, CardActions, CardContent,  Link,  Typography } from "@mui/material";
 
 export default function NewsCard({data}) {
-    console.log(data)
     return (
         <Card>
             <CardContent>
