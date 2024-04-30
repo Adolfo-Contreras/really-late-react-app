@@ -4,17 +4,13 @@ import { getTopNews } from "../apiQuery";
 export default function Navbar() {
     return (
         <Box>
-            <AppBar position="static" color="secondary" className="p-4">
+            <AppBar position="static" color="primary" className="p-4">
               <Toolbar className="flex justify-between">
                 <Typography variant="h2" >
                   <span className="logoColor">No/\/Sense</span> <span className="logoColor">News</span>
                 </Typography>
                 
-                    <FormControl>
-                      <FormLabel></FormLabel>
-                      <OutlinedInput placeholder="Search" endAdornment={<IconButton onClick={()=>getTopNews()}><SearchSharpIcon/></IconButton>}></OutlinedInput>
-                      <FormHelperText></FormHelperText>
-                    </FormControl>
+                    
               </Toolbar>
             </AppBar>
         </Box>

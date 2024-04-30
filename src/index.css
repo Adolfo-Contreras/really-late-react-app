@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 body{
-  @apply bg-gray-200 h-screen
+  @apply h-screen;
+  background-color: #DCE1DE;
 }
 html{
   @apply h-full w-full
 }
 
 .logoColor{
-  /* @apply font-bold bg-clip-text; */
-  background-clip: text;
-  background-image: linear-gradient(45deg, #eb5f5f, #3396f1);
+  @apply font-bold bg-clip-text;
+  background-image: linear-gradient(45deg, #49A078, #9CC5A1);
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #1F2421;
+  -webkit-text-stroke-width: .25px;
 }
