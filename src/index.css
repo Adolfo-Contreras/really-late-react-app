@@ -17,3 +17,6 @@ html{
   -webkit-text-stroke-color: #1F2421;
   -webkit-text-stroke-width: .25px;
 }
+.lazy__slide{
+  @apply h-full rounded-md bg-pink-500;
+}

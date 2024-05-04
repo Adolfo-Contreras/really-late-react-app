@@ -1,18 +1,22 @@
-import { Box, AppBar, Toolbar, Typography, List, ListItem, FormControl, FormLabel, FormHelperText, OutlinedInput, IconButton } from "@mui/material";
-import SearchSharpIcon from '@mui/icons-material/SearchSharp';
-import { getTopNews } from "../apiQuery";
+import { Box, AppBar, Toolbar, Typography, Button, Link } from "@mui/material";
 export default function Navbar() {
-    return (
-        <Box>
-            <AppBar position="static" color="primary" className="p-4">
-              <Toolbar className="flex justify-between">
-                <Typography variant="h2" >
-                  <span className="logoColor">No/\/Sense</span> <span className="logoColor">News</span>
-                </Typography>
-                
-                    
-              </Toolbar>
-            </AppBar>
-        </Box>
-    )
+  return (
+    <Box>
+      <AppBar position="static" color="primary" className="p-4">
+        <Toolbar className="flex justify-between">
+          <Link href="/" underline="none">
+            <Typography variant="h2">
+              <span className="logoColor">No/\/Sense</span>
+              <span className="logoColor"> News</span>
+            </Typography>
+          </Link>
+          <Link href="/all">
+            <Button variant="contained" color="darkGreen">
+              Search All
+            </Button>
+          </Link>
+        </Toolbar>
+      </AppBar>
+    </Box>
+  );
 }
